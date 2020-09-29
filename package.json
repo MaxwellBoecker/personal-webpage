@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/MaxwellBoecker/personal-webpage#readme",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "express": "^4.17.1",
     "lodash": "^4.17.20",
     "nodemon": "^2.0.4",
