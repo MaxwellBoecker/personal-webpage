@@ -22,7 +22,9 @@
   "homepage": "https://github.com/MaxwellBoecker/personal-webpage#readme",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "@material-ui/system": "^4.9.14",
     "express": "^4.17.1",
+    "file-loader": "^6.1.0",
     "lodash": "^4.17.20",
     "nodemon": "^2.0.4",
     "path": "^0.12.7",
