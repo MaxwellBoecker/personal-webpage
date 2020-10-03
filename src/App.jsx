@@ -9,7 +9,7 @@ import {
 import About from './About.jsx';
 import Portfolio from './Portfolio.jsx';
 import Home from './Home.jsx';
-import Sidebar from './Sidebar.jsx'
+import BottomNav from './BottomNav.jsx'
 import { Typography, Toolbar, AppBar, Button, BottomNavigation } from '@material-ui/core';
 
 function App() {
@@ -22,6 +22,20 @@ function App() {
         main: '#fc9303',
       },
     },
+    typography: {
+      fontFamily: [
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+      ].join(','),
+    }
   });
   const allLinks = ['/', '/about', '/portfolio'];
   const useStyles = makeStyles((theme) => ({
@@ -31,6 +45,12 @@ function App() {
     title: {
       flexGrow: 1,
     },
+    number: {
+      '&::before': {
+        content: "'03'",
+        display: 'block',
+      }
+    }
   }));
   const classes = useStyles(theme);
   return (
@@ -44,13 +64,13 @@ function App() {
       <ThemeProvider theme={theme}>
       <AppBar 
       position="static"
-      color="primary"
+      style={{backgroundColor:"#484e4a"}}
       >
         <Toolbar>
           <Typography 
           variant="h6" 
           className={classes.title}
-          color="secondary"
+          style={{color:"#00a099"}}
           >
             Maxwell Boecker
           </Typography>
@@ -59,25 +79,33 @@ function App() {
           style={{textDecoration: "none"}}
           >
             <Button 
-            color="secondary"
-            >Home</Button>
-          </Link>
-          <Link 
-          to="/about"
-          style={{textDecoration: "none"}}
-          >
-            <Button 
-            color="secondary"
-            >About
-            </Button>
+            style={{color: '#eacb48'}}
+            >01. Present</Button>
           </Link>
           <Link 
           to="/portfolio"
           style={{textDecoration: "none"}}
           >
             <Button 
-            color="secondary"
-            >Portfolio</Button>
+            style={{color: '#eacb48'}}
+            >02. Portfolio
+            </Button>
+          </Link>
+          <Link 
+          to="/"
+          style={{textDecoration: "none" }}
+          >
+            <Button 
+            style={{color: '#eacb48' }}
+            >03. Future</Button>
+          </Link>
+          <Link 
+          to="/portfolio"
+          style={{textDecoration: "none"}}
+          >
+            <Button 
+            style={{color: '#eacb48'}}
+            >04. Resume</Button>
           </Link>
         </Toolbar>
       </AppBar>
@@ -93,9 +121,16 @@ function App() {
           <Home />
         </Route>
       </Switch>
-      {/* <BottomNavigation>
-
-      </BottomNavigation> */}
+      {/* <div 
+      orientation="left"
+      
+      >
+       <ul>
+         <li>ordered</li>
+       </ul>
+       ::after
+      </div> */}
+      <BottomNav></BottomNav>
       </ThemeProvider>
       </div>
     </Router>

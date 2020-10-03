@@ -18,12 +18,12 @@ function About(){
     <ThemeProvider theme={theme}>
 
     <Container 
-    maxWidth="sm"
-    style={{backgroundColor: '#0f4c81'}}
+    maxWidth="md"
+    style={{padding: '64px'}}
     >
         <Typography 
         variant="h4"
-        style={{color: "#ccd6f6"}}
+        style={{color:"#00a099", textAlign: 'center'}}
         >
           About Me
 
@@ -31,7 +31,7 @@ function About(){
 
         <Typography 
         paragraph
-        style={{color: "#ccd6f6"}}
+        style={{color:"#00a099"}}
         >
           Problem solving and analysis is my passion. For the last several years I have been studying and, more recently, teaching chess, a game which demands calculation ability and analytical skill. 
           Software Development has allowed me to realize this love in a new light, as I am faced with new and exciting problems on a daily basis. 

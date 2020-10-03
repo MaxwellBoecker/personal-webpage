@@ -7,12 +7,12 @@ function Portfolio(){
   return (
     <div>
       <Container maxWidth="md">
-      <Typography variant="h4">
+      {/* <Typography variant="h4">
         Horter
       </Typography>
       <Typography variant="h4">
         Harbinger
-      </Typography>
+      </Typography> */}
       </Container>
     </div>
   );
