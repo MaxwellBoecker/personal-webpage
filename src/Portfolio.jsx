@@ -6,13 +6,19 @@ import horter3 from './horter/Horter3.png';
 import horter4 from './horter/Horter4.png';
 //import horter5 from './horter/Horter5.png';
 
-import PortfolioList from './PortfolioList.jsx'
+import PortfolioList from './PortfolioList.jsx';
+import Featured from './Featured.jsx';
 function Portfolio(){
   const images = [horter1, horter2, horter3, horter4];
+  const [featured, setFeatured] = useState(horter1);
+
+  const updateFeatured = (image) => {
+    setFeatured(image);
+  }
 
   return (
     <div>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} style={{paddingLeft: 12}}>
         <Grid item xs={12}>
           <Paper >xs=12</Paper>
         </Grid>
@@ -30,20 +36,17 @@ function Portfolio(){
           </Typography>
 
         </Grid>
-          {images.map((image, index) => <PortfolioList image={image} key={index}/>)}
-        <Grid item xs={4}>
+          {images.map((image, index) => <PortfolioList image={image} key={index} onClick={updateFeatured}/>)}
+        {/* <Grid item xs={4}>
         <img src={horter1} 
             alt="HorterImage" 
             style={{
-              
               maxWidth: '100%',
               maxHeight: '100%',
-              
             }}
             />
-          
-        </Grid>
-        
+        </Grid> */}
+        <Featured image={featured}/>
       </Grid>
     </div>
   );

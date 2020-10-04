@@ -6,11 +6,11 @@ function BottomNav(){
     <BottomNavigation
     style={{background: '#484e4a'}}
     >
-      <Typography
+      {/* <Typography
       style={{color: '#eacb48'}}
       >
         icons go here
-      </Typography>
+      </Typography> */}
     </BottomNavigation>
   )
   
