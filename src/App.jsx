@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { useEffect, useState } from 'react';
 import { makeStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
 import {
   BrowserRouter as Router,
@@ -9,35 +9,18 @@ import {
 import About from './About.jsx';
 import Portfolio from './Portfolio.jsx';
 import Home from './Home.jsx';
-import BottomNav from './BottomNav.jsx'
+import BottomNav from './BottomNav.jsx';
+import Contact from './Contact.jsx';
+import Resume from './Resume.jsx';
 import { Typography, Toolbar, AppBar, Button, BottomNavigation } from '@material-ui/core';
 
 function App() {
-  const theme = createMuiTheme({
-    palette: {
-      primary: {
-        main: '#00194E',
-      },
-      secondary: {
-        main: '#fc9303',
-      },
-    },
-    typography: {
-      fontFamily: [
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-      ].join(','),
-    }
-  });
-  const allLinks = ['/', '/about', '/portfolio'];
+  // const [loaded, setLoaded] = useState();
+  // useEffect(() => {
+  //   setLoaded(true);
+  //   console.log(loaded);
+  // })
+  
   const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -52,7 +35,7 @@ function App() {
       }
     }
   }));
-  const classes = useStyles(theme);
+  const classes = useStyles();
   return (
     
 
@@ -61,16 +44,28 @@ function App() {
       className={classes.root}
       // style={{backgroundColor: '#0f4c81'}}
       >
-      <ThemeProvider theme={theme}>
+      <ThemeProvider>
       <AppBar 
-      position="static"
-      style={{backgroundColor:"#484e4a"}}
+      position="relative"
+      style={{
+        backgroundColor:"#484e4a",
+        display: 'flex',
+        paddingRight: '0px',
+      }}
       >
-        <Toolbar>
+        <Toolbar
+        position="relative"
+        style={{ 
+          display: 'flex',
+
+        }}
+        >
           <Typography 
           variant="h6" 
           className={classes.title}
-          style={{color:"#00a099"}}
+          style={{
+            color:"#00a099",
+          }}
           >
             Maxwell Boecker
           </Typography>
@@ -80,7 +75,7 @@ function App() {
           >
             <Button 
             style={{color: '#eacb48'}}
-            >01. Home</Button>
+            >Home</Button>
           </Link>
           <Link 
           to="/portfolio"
@@ -88,24 +83,24 @@ function App() {
           >
             <Button 
             style={{color: '#eacb48'}}
-            >02. Portfolio
+            >Portfolio
             </Button>
           </Link>
           <Link 
-          to="/"
+          to="/resume"
+          style={{textDecoration: "none"}}
+          >
+            <Button 
+            style={{color: '#eacb48'}}
+            >Resume</Button>
+          </Link>
+          <Link 
+          to="/contact"
           style={{textDecoration: "none" }}
           >
             <Button 
             style={{color: '#eacb48' }}
-            >03. Contact</Button>
-          </Link>
-          <Link 
-          to="/portfolio"
-          style={{textDecoration: "none"}}
-          >
-            <Button 
-            style={{color: '#eacb48'}}
-            >04. Resume</Button>
+            >Contact</Button>
           </Link>
         </Toolbar>
       </AppBar>
@@ -114,23 +109,21 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
+        <Route path="/resume">
+          <Resume />
+        </Route>
         <Route path="/portfolio">
           <Portfolio />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
         <Route path="/">
           <Home />
         </Route>
       </Switch>
-      {/* <div 
-      orientation="left"
+      {/* <BottomNav></BottomNav> */}
       
-      >
-       <ul>
-         <li>ordered</li>
-       </ul>
-       ::after
-      </div> */}
-      <BottomNav></BottomNav>
       </ThemeProvider>
       </div>
     </Router>

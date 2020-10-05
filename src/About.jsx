@@ -19,7 +19,7 @@ function About(){
 
     <Container 
     maxWidth="md"
-    style={{padding: '64px'}}
+    style={{paddingTop: '24px'}}
     >
         <Typography 
         variant="h4"
