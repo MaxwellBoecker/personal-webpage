@@ -5,7 +5,7 @@ function Featured(props){
   const image  = props.image;
   const updateFeatured = props.updateFeatured;
   return (
-      <Grid item xs={3}>
+      <Grid item xs={6}>
         <img src={image} 
             alt="HorterImage" 
             style={{

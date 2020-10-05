@@ -1,5 +1,4 @@
 import { Typography, Container } from '@material-ui/core';
-import { borderRadius } from '@material-ui/system'
 import React, { useState } from 'react';
 import headshot from './headshot.jpeg'
 import About from './About.jsx';
@@ -22,8 +21,8 @@ function Home(){
         alt="Headshot" 
         style={{
           
-          maxWidth: '500px',
-          maxHeight: '500px'
+          maxWidth: '100%',
+          maxHeight: '100%'
 
         }}
         />

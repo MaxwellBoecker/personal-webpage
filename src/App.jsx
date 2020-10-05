@@ -80,7 +80,7 @@ function App() {
           >
             <Button 
             style={{color: '#eacb48'}}
-            >01. Present</Button>
+            >01. Home</Button>
           </Link>
           <Link 
           to="/portfolio"
@@ -97,7 +97,7 @@ function App() {
           >
             <Button 
             style={{color: '#eacb48' }}
-            >03. Future</Button>
+            >03. Contact</Button>
           </Link>
           <Link 
           to="/portfolio"
