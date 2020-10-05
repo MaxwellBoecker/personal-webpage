@@ -2,23 +2,14 @@ import { Grid } from '@material-ui/core';
 import React, { useState } from 'react';
 import PortfolioListEntry from './PortfolioListEntry.jsx'
 function PortfolioList(props){
-  const image  = props.image;
+  const images  = props.images;
   const onClick = props.onClick;
 
   return (
-      <Grid item xs={1}>
-        <img src={image} 
-            alt="HorterImage" 
-            style={{
-              
-              maxWidth: '100%',
-              maxHeight: '100%',
+    <Grid container spacing={2}>
+        {images.map((image, index) => <PortfolioListEntry image={image} key={index} onClick={onClick}/>)}
 
-            }}
-            onClick={() => onClick(image)}
-            />
-          
-      </Grid>
+    </Grid>
   );
 }
 

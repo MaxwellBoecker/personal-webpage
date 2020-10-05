@@ -3,20 +3,19 @@ import React, { useState } from 'react';
 import Horter1 from './horter/Horter1.png'
 function PortfolioListEntry(props){
   const image  = props.image;
-  console.log(image);
+  const onClick = props.onClick;
 
   return (
-    <div>
-          <img src={image} 
+    <Grid item xs={3}>
+        <img src={image} 
             alt="HorterImage" 
             style={{
-              
-              maxWidth: '5%',
-              maxHeight: '5%',
-
+              maxWidth: '100%',
+              maxHeight: '100%',
             }}
+            onClick={() => onClick(image)}
             />
-    </div>
+      </Grid>
   );
 }
 
