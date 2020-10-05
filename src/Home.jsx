@@ -1,8 +1,8 @@
 import { Typography, Container } from '@material-ui/core';
 import React, { useState } from 'react';
-import headshot from './headshot.jpeg'
+import headshot from './assets/headshot.jpeg'
 import About from './About.jsx';
-
+import BottomNav from './BottomNav.jsx';
 function Home(){
 
   return (
@@ -20,7 +20,7 @@ function Home(){
         <img src={headshot} 
         alt="Headshot" 
         style={{
-          
+          paddingTop: '24px',
           maxWidth: '100%',
           maxHeight: '100%'
 

@@ -4,7 +4,7 @@ import horter1 from './horter/Horter1.png';
 import horter2 from './horter/Horter2.png';
 import horter3 from './horter/Horter3.png';
 import horter4 from './horter/Horter4.png';
-//import horter5 from './horter/Horter5.png';
+
 
 import PortfolioList from './PortfolioList.jsx';
 import Featured from './Featured.jsx';
@@ -20,11 +20,11 @@ function Portfolio(){
     <div>
       <Container maxWidth='sm'>
           <Typography variant="h4">
-            Horter
+          Horter
           </Typography>
-          <a href={'https://horter.org'} target='_blank'>horter.org</a> 
+          {/* <a href={'https://horter.org'} target='_blank'>horter.org</a>  */}
           <Typography paragraph>
-          Horter is an application which helps users create gardens, 
+          <a href={'https://horter.org'} target='_blank'>Horter</a>  is an application which helps users create gardens, 
           update and maintain information about them, and learn more 
           about how to add to them and keep them growing strong. It 
           features a helpful ChatBot which can troubleshoot gardener questions, 
@@ -42,6 +42,10 @@ function Portfolio(){
           Chatbot page
           </Typography>
           <PortfolioList images={images} onClick={updateFeatured}/>
+          <Typography paragraph>
+          Tech Stack: VueJS, NodeJS/Express, PostgreSQL, Sequelize, Buefy, Sass, AWS, Dialogflow API, Google Maps API, Google Places API, 
+
+          </Typography>
       </Container>
     </div>
   );
