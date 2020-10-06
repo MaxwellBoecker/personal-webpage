@@ -21,6 +21,10 @@
   },
   "homepage": "https://github.com/MaxwellBoecker/personal-webpage#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@material-ui/core": "^4.11.0",
     "@material-ui/system": "^4.9.14",
     "express": "^4.17.1",
@@ -30,6 +34,7 @@
     "path": "^0.12.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^3.11.0",
     "react-pdf": "^5.0.0",
     "react-router-dom": "^5.2.0"
   },
