@@ -31,11 +31,28 @@ function About(){
 
         <Typography 
         paragraph
-        style={{color:"#00a099"}}
+        style={{color:"#006d66"}}
         >
           Problem solving and analysis is my passion. For the last several years I have been studying and, more recently, teaching chess, a game which demands calculation ability and analytical skill. 
           Software Development has allowed me to realize this love in a new light, as I am faced with new and exciting problems on a daily basis. 
           Whether it be cracking an algorithm or scouring documentation for understanding of new technology, I am always willing to put myself to the test!
+
+
+        </Typography>
+        <Typography 
+        variant="h6"
+        style={{color:"#00a099", textAlign: 'center'}}
+        >
+          Technologies I work with:
+
+
+        </Typography>
+        <Typography 
+        paragraph
+        style={{color:"#006d66", textAlign: 'center'}}
+        >
+          Node/Express, ReactJS, VueJS, PostgreSQL, MySQL, JavaScript, HTML, CSS
+          
 
         </Typography>
     </Container>
