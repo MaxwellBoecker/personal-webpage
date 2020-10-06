@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Container } from '@material-ui/core';
 import { Document, Page, pdfjs} from "react-pdf"
-import resume from './assets/resume.pdf'
+import resume from './assets/Resume Maxwell Boecker (2).pdf'
 
 function Resume(){
   console.log(resume);

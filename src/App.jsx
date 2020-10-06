@@ -44,7 +44,7 @@ function App() {
       className={classes.root}
       // style={{backgroundColor: '#0f4c81'}}
       >
-      <ThemeProvider>
+      {/* <ThemeProvider> */}
       <AppBar 
       position="relative"
       style={{
@@ -122,9 +122,9 @@ function App() {
           <Home />
         </Route>
       </Switch>
-      {/* <BottomNav></BottomNav> */}
+      <BottomNav></BottomNav>
       
-      </ThemeProvider>
+      {/* </ThemeProvider> */}
       </div>
     </Router>
   );

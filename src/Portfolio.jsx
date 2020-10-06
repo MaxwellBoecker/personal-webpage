@@ -19,11 +19,11 @@ function Portfolio(){
   return (
     <div>
       <Container maxWidth='sm'>
-          <Typography variant="h4">
+          <Typography variant="h4" style={{color:"#00a099"}}>
           Horter
           </Typography>
           {/* <a href={'https://horter.org'} target='_blank'>horter.org</a>  */}
-          <Typography paragraph>
+          <Typography paragraph style={{color:"#006d66"}}>
           <a href={'https://horter.org'} target='_blank'>Horter</a>  is an application which helps users create gardens, 
           update and maintain information about them, and learn more 
           about how to add to them and keep them growing strong. It 
@@ -31,19 +31,22 @@ function Portfolio(){
           as well as an Augmented Reality garden planning display which will help 
           users envision what their garden will look like ‘off-the-page’.
           </Typography>
-          <Typography paragraph>
+          <Typography paragraph style={{color:"#006d66"}}>
           Browse throught the photo gallery 
           with the selector located below the main image.
           </Typography>
           <Featured image={featured}/>
-          <Typography variant='h4'>Selector</Typography>
-          <Typography paragraph>
+          <Typography variant='h4' style={{color:"#00a099", textAlign: 'center'}}>Selector</Typography>
+          <Typography paragraph style={{color:"#006d66", textAlign: 'center'}}>
           From left to right: Plant List page, Garden Main page, Nearby Stores page,
           Chatbot page
           </Typography>
           <PortfolioList images={images} onClick={updateFeatured}/>
-          <Typography paragraph>
-          Tech Stack: VueJS, NodeJS/Express, PostgreSQL, Sequelize, Buefy, Sass, AWS, Dialogflow API, Google Maps API, Google Places API, 
+          <Typography variant='h5' style={{color:"#00a099", textAlign: 'center'}}>
+          Tech Stack: 
+          </Typography>
+          <Typography paragraph style={{color:"#006d66", textAlign: 'center'}}>
+          VueJS, NodeJS/Express, PostgreSQL, Sequelize, Buefy, Sass, AWS, Dialogflow API, Google Maps API, Google Places API, 
 
           </Typography>
       </Container>
