@@ -2,7 +2,7 @@ import { Typography, Container } from '@material-ui/core';
 import React, { useState } from 'react';
 import headshot from './assets/headshot.jpeg'
 import About from './About.jsx';
-import BottomNav from './BottomNav.jsx';
+
 function Home(){
 
   return (
