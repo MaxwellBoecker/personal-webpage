@@ -40,8 +40,8 @@ function About(){
 
         </Typography>
         <Typography 
-        variant="h6"
-        style={{color:"#00a099", textAlign: 'center'}}
+        variant="h5"
+        style={{color:"#00a099", textAlign: 'center', paddingTop: '24px'}}
         >
           Technologies I work with:
 
@@ -49,7 +49,7 @@ function About(){
         </Typography>
         <Typography 
         paragraph
-        style={{color:"#006d66", textAlign: 'center'}}
+        style={{color:"#006d66", textAlign: 'center', paddingTop: '24px'}}
         >
           Node/Express, ReactJS, VueJS, PostgreSQL, MySQL, JavaScript, HTML, CSS
           
