@@ -3,18 +3,30 @@ import React, { useState } from 'react';
 import PortfolioListEntry from './PortfolioListEntry.jsx'
 function Featured(props){
   const image  = props.image;
-  const updateFeatured = props.updateFeatured;
+  const project = props.project;
+  console.log(project);
   return (
       <Grid item xs={6}>
+        {project === 'Horter' ? 
         <img src={image} 
             alt="HorterImage" 
             style={{
-              
+
               maxWidth: '100%',
               maxHeight: '100%',
 
             }}
+        /> :
+        <img src={image} 
+            alt="HarbingerImage" 
+            style={{
+
+              maxWidth: '200%',
+              maxHeight: '200%',
+
+            }}
             />
+        }
           
       </Grid>
   );
