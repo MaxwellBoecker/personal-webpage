@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
-import { Input, FormControl, InputLabel, Button, FormGroup, OutlinedInput } from '@material-ui/core';
-import axios from 'axios';
-import { email } from './.config.js'
-import { textAlign } from '@material-ui/system';
+import React from 'react';
+import { Button } from '@material-ui/core';
+import { email } from './.config.js';
 
-function ContactForm(){
-  console.log(email);
+function ContactForm() {
   const onClick = () => {
     window.location.href = `mailto:${email}`;
-  }
- 
+  };
+
   return (
-    <div style={{textAlign: 'center'}}>
-      <Button onClick={onClick} 
-      style={{
-        color: '#eacb48',
-        backgroundColor: "#00a099"
-      }}
-      >Send Me an Email</Button>
+    <div style={{ textAlign: 'center' }}>
+      <Button
+        onClick={onClick}
+        style={{
+          color: '#eacb48',
+          backgroundColor: '#00a099',
+        }}
+      >
+        Send Me an Email
+      </Button>
     </div>
-  )
+  );
   // const [state, setState] = useState({
   //   name: '',
   //   email: '',
@@ -39,7 +39,7 @@ function ContactForm(){
   //       });
   //     })
   //     .catch((err, data) => console.error(err, data));
-    
+
   // };
 
   // const onInputChange = event => {
@@ -55,7 +55,7 @@ function ContactForm(){
   //       <FormGroup>
   //         <FormControl>
   //           <InputLabel>Name</InputLabel>
-  //           <OutlinedInput 
+  //           <OutlinedInput
   //           type='text'
   //           name='name'
   //           value={state.name}
@@ -65,7 +65,7 @@ function ContactForm(){
   //         </FormControl>
   //         <FormControl>
   //           <InputLabel>Email</InputLabel>
-  //           <OutlinedInput 
+  //           <OutlinedInput
   //           type='text'
   //           name='email'
   //           value={state.email}
@@ -76,7 +76,7 @@ function ContactForm(){
 
   //         <FormControl>
   //           <InputLabel>Subject</InputLabel>
-  //           <OutlinedInput 
+  //           <OutlinedInput
   //           type='text'
   //           name='subject'
   //           value={state.subject}
@@ -98,7 +98,7 @@ function ContactForm(){
   //               borderColor: '#00a099',
   //               color: '#00a099'
   //             }
-              
+
   //           }}
   //           multiline={true}
   //           rows={3}
@@ -116,6 +116,6 @@ function ContactForm(){
   //     </form>
   //   </div>
   // )
-};
+}
 
 export default ContactForm;
