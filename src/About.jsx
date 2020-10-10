@@ -31,7 +31,7 @@ function About(){
 
         <Typography 
         paragraph
-        style={{color:"#006d66"}}
+        style={{color:"#006d66", paddingTop: '24px'}}
         >
           Problem solving and analysis is my passion. For the last several years I have been studying and, more recently, teaching chess, a game which demands calculation ability and analytical skill. 
           Software Development has allowed me to realize this love in a new light, as I am faced with new and exciting problems on a daily basis. 

@@ -3,7 +3,7 @@ const horter =
   {
     title: 'Horter',
     anchor: <a href={'https://horter.org'} target='_blank'>Horter</a>,
-    desc: ' is a virtual gardening app which helps users create gardens, update and maintain information about them, and learn more about how to add to them and keep them growing strong. It features a helpful ChatBot which can troubleshoot gardener questions, as well as an Augmented Reality garden planning display which will help users envision what their garden will look like \‘off-the-page\’.',
+    desc: ' is a virtual gardening app which helps users create gardens, update and maintain information about them, and learn more about how to add to them and keep them growing strong. It features a helpful ChatBot which can troubleshoot gardener questions, as well as an Augmented Reality garden planning display which helps users envision what their garden will look like \‘off-the-page\’.',
     selector: 'From left to right: Plant List page, Garden Main page, Nearby Stores page, Chatbot page',
     stack: 'VueJS, NodeJS/Express, PostgreSQL, Sequelize, AWS, Dialogflow API, Google Maps API, Google Places API, Buefy'
 

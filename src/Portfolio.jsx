@@ -33,7 +33,7 @@ function Portfolio(){
   return (
     <div>
       <Container maxWidth='sm'>
-          <Typography variant="h4" style={{color:"#00a099", paddingTop: '24px'}}>
+          <Typography variant="h3" style={{color:"#00a099", paddingTop: '24px', paddingBottom: '24px'}}>
             Projects
           </Typography>
             <Button variant="contained" onClick={() => onClick('Horter')} style={{backgroundColor: "#eacb48", marginRight: '1em'}}>Horter</Button>

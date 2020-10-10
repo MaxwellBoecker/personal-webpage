@@ -17,6 +17,12 @@ function Home(){
         >
           Welcome!
         </Typography>
+        <Typography 
+        variant="h6"
+        style={{color: "#00a099", textAlign: 'center', paddingTop: '12px'}}
+        >
+          I'm Maxwell Boecker
+        </Typography>
         <img src={headshot} 
         alt="Headshot" 
         style={{
