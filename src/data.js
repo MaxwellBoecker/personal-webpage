@@ -12,7 +12,7 @@ const horter = {
 const harbinger = {
   title: 'Harbinger',
   desc: 'Harbinger is a user democracy search engine which gives users the ability to review websites. After logging in, the home page displays the top-rated reviews. Upon searching, the user will be able to visit websites and if they choose, leave a review for one of them that will be stored in the user profile. The Cognitive Services Search API allows for quick and effective searching. Not currently active, no link available',
-  selector: 'From left to right: Home Page, My Reviews, Profile Page',
+  selector: 'From left to right: My Reviews, Home Page, Profile Page',
   stack: 'ReactJS, Node/Express, MySQL, Sequelize, Google Cloud, Cognitive Services API',
 };
 

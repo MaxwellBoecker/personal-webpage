@@ -53,7 +53,7 @@ function About() {
           paragraph
           style={{ color: '#006d66', textAlign: 'center', paddingTop: '24px' }}
         >
-          Node/Express, ReactJS, VueJS, PostgreSQL, MySQL, JavaScript, HTML, CSS
+          JavaScript, Node/Express, ReactJS, VueJS, PostgreSQL, MySQL, HTML, CSS
 
         </Typography>
       </Container>
