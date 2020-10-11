@@ -33,13 +33,16 @@ function About() {
           paragraph
           style={{ color: '#006d66', paddingTop: '24px' }}
         >
-          Problem solving and analysis is my passion.
-          For the last several years I have been studying and, more recently,
-          teaching chess, a game which demands calculation ability and analytical skill.
-          Software Development has allowed me to realize this love in a new light,
-          as I am faced with new and exciting problems on a daily basis.
-          Whether it be cracking an algorithm or scouring documentation for understanding of
-          new technology, I am always willing to put myself to the test!
+          I am someone who loves to build with ideas and concepts.
+          Whether it is software, music, chess or language,
+          each medium has a system that consists of smaller components.
+          The more of the smaller parts you can learn, the bigger the
+          ideas and pictures you can build. Examining the component
+          parts over time leads to the realization and development of
+          more efficient tools for navigating the system. Eventually you’re
+          really working with your own language. This is what I like to
+          spend my time doing, learning and building.
+
 
         </Typography>
         <Typography
