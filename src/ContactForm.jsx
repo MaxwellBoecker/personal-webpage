@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
-import { email } from './.config.js';
+// import { email } from './.config.js';
 
 function ContactForm() {
   const onClick = () => {

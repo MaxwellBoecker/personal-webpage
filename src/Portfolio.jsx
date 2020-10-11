@@ -2,10 +2,10 @@ import {
   Container, Typography, Button,
 } from '@material-ui/core';
 import React, { useState } from 'react';
-import horter1 from './horter/Horter1.png';
-import horter2 from './horter/Horter2.png';
-import horter3 from './horter/Horter3.png';
-import horter4 from './horter/Horter4.png';
+import horter1 from './horter/horter1.png';
+import horter2 from './horter/horter2.png';
+import horter3 from './horter/horter3.png';
+import horter4 from './horter/horter4.png';
 import harbinger1 from './harbinger/harbinger1.png';
 import harbinger2 from './harbinger/harbinger2.png';
 import harbinger3 from './harbinger/harbinger3.png';
