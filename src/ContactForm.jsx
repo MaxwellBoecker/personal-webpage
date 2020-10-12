@@ -1,10 +1,15 @@
 import React from 'react';
+import axios from 'axios';
 import { Button } from '@material-ui/core';
 // import { email } from './.config.js';
 
 function ContactForm() {
   const onClick = () => {
-    window.location.href = `mailto:${process.env.REACT_APP_EMAIL}`
+    axios.get('/env').then(data => {
+      const email = data.data;
+      window.location.href = `mailto:${email}`;
+    })
+    .catch(err => alert('A problem has occurred'));
   };
 
   return (

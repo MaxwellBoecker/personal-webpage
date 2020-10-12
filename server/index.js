@@ -11,6 +11,10 @@ const { PORT } = process.env;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/", express.static(path.join(__dirname, "../build")));
+
+app.get('/env', (req, res) => {
+  res.status(200).send(process.env.EMAIL);
+});
 // app.get('/', (req, res) => {
 //   res.send('Hello World!')
 // })
