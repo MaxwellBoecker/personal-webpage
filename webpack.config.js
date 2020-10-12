@@ -6,7 +6,7 @@ module.exports = {
     // ...
     new webpack.DefinePlugin({
       'process.env': {
-        'EMAIL': JSON.stringify(process.env.EMAIL),
+        'REACT_APP_EMAIL': JSON.stringify(process.env.REACT_APP_EMAIL),
       }
     })
   ],

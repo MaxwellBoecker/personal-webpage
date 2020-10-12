@@ -4,7 +4,7 @@ import { Button } from '@material-ui/core';
 
 function ContactForm() {
   const onClick = () => {
-    window.location.href = `mailto:${process.env.EMAIL}`
+    window.location.href = `mailto:${process.env.REACT_APP_EMAIL}`
   };
 
   return (
