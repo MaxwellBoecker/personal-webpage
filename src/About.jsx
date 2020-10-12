@@ -40,7 +40,7 @@ function About() {
           ideas and pictures you can build. Examining the component
           parts over time leads to the realization and development of
           more efficient tools for navigating the system. Eventually you’re
-          really working with your own language. This is what I like to
+          really working with your own language! This is what I like to
           spend my time doing, learning and building.
 
 

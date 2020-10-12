@@ -3,8 +3,10 @@ import { Button } from '@material-ui/core';
 // import { email } from './.config.js';
 
 function ContactForm() {
+  const { EMAIL, EMAIL_USER } = process.env;
+  console.log(EMAIL, EMAIL_USER);
   const onClick = () => {
-    window.location.href = `mailto:${email}`;
+    window.location.href = `mailto:${process.env.EMAIL}`;
   };
 
   return (
