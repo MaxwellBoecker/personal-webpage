@@ -1,13 +1,14 @@
-const dotenv = require('dotenv');
+require('dotenv').config();
 const webpack = require('webpack');
 
 module.exports = {
   plugins: [
     // ...
     new webpack.DefinePlugin({
-       'process.env': JSON.stringify(dotenv.config().parsed) // it will automatically pick up key values from .env file
+      'process.env': {
+        'EMAIL': JSON.stringify(process.env.EMAIL),
+      }
     })
-    // ...
   ],
   entry: './src/Index.jsx',
   output: {
