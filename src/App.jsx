@@ -64,16 +64,21 @@ function App() {
 
             }}
           >
-            <Typography
-              variant="h6"
-              className={classes.title}
-              style={{
-                color: '#00a099',
-              }}
-            >
-              Maxwell Boecker
-            </Typography>
             <Link
+              to="/"
+              style={{ textDecoration: 'none' }}
+            >
+              <Typography
+                variant="h6"
+                className={classes.title}
+                style={{
+                  color: '#00a099',
+                }}
+              >
+                Maxwell Boecker
+              </Typography>
+            </Link>
+            {/* <Link
               to="/"
               style={{ textDecoration: 'none' }}
             >
@@ -82,7 +87,7 @@ function App() {
               >
                 Home
               </Button>
-            </Link>
+            </Link> */}
             <Link
               to="/portfolio"
               style={{ textDecoration: 'none' }}
