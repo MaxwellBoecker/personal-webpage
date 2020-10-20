@@ -67,6 +67,7 @@ function App() {
             <Link
               to="/"
               style={{ textDecoration: 'none' }}
+              className={classes.title}
             >
               <Typography
                 variant="h6"
